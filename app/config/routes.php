@@ -2,6 +2,11 @@
 
 $router = new \Phalcon\Mvc\Router();
 
+$router->addGet("/api/empty", array(       
+    'controller' => 'Vote',
+    'action' => 'dummy',
+));
+
 $router->addPost("/api/empty", array(       
     'controller' => 'Vote',
     'action' => 'dummy',
